@@ -1,0 +1,81 @@
+/* Default (Mobile) */
+
+.results-info {
+    background: #cccccc80;
+    margin: 3px;
+    padding: 4px;
+    color: #5f4344;
+    font-size: 24px;
+    overflow: hidden;
+    margin: 0
+}
+
+.results-info .stats {
+    float: left;
+    display: none;
+    margin-top: 4px;
+}
+
+.results-info .page-buttons {
+    float: right;
+    padding: 2px 4px;
+}
+
+.results-info .page-pos {
+    float: right;
+    margin-top: 4px;
+}
+
+.results-info .page-buttons .btn {
+    padding: 3px 2px 1px;
+    background: #ddd;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+.results-info .page-buttons img {
+    filter: grayscale(80%);
+    transition-duration: 0.6s;
+}
+
+.results-info .page-buttons .btn:hover, 
+.results-info .page-buttons img:hover {
+    background-color: #fff;
+    filter: inherit;
+}
+
+.results-info .page-buttons .btn:focus {
+    outline:0;
+}
+.results-info .page-buttons .btn:active,
+.results-info .page-buttons img:active {
+    background-color: #ccc;
+}
+
+.results-info .page-buttons .btn-disabled *,
+.results-info .page-buttons .btn-disabled *:active,
+.results-info .page-buttons .btn-disabled *:hover,
+.results-info .page-buttons .btn-disabled:active ,
+.results-info .page-buttons .btn-disabled:hover ,
+.results-info .page-buttons .btn-disabled {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    background: #ccc;
+}
+
+
+/* > large mobile */
+@media (min-width: 451px) {
+    .results-info {
+        margin: 4px 0 0;
+    }
+}
+
+
+/* > tablet */
+@media (min-width: 673px) {
+    .results-info .stats {
+        display: block;
+    }
+}
+

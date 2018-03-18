@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Wacky Wanda's Wicked Weapons";
+}
+
+<body class="container">
+    <header>
+        <div class="header-upper">
+            <h1 class="header-upper__header">
+                <img class="header-upper__logo-face" alt="wanda's face" src="/images/wandas-face.png">
+                <span class="header-upper__title">Wacky Wanda's Wicked Weapons</span>
+            </h1>
+        </div>
+        <nav class="navbar" role="navigation">
+            <ul class="navbar__list">
+                <li class="navbar__li-buttons"><a href="/#/">Home</a></li>
+                <li class="navbar__li-buttons"><a href="/#/weapons">Weapons</a></li>
+                <li class="navbar__li-search">
+                    <form class="weapons-search">
+                        <input class="weapons-search__input" type="text" name="q" placeholder="Weapons search">
+                    </form>
+                </li>
+                <li class="navbar__li-pay"><a href="/#/items">gp<img src="/images/coins.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+    </main>
+</body>
+
+@section scripts {
+    <script src="~/dist/main.js" asp-append-version="true"></script>
+}

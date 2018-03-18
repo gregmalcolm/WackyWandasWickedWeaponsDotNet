@@ -1,0 +1,130 @@
+/* Default (Mobile) */
+
+.header-upper {
+    display: none;
+}
+
+.header-upper__header {
+    text-align: center;
+    font-family: Papyrus;
+    margin: 10px;
+}
+
+.header-upper__title {
+    color: #9d0a0e;
+    font-size: 40px;
+}
+
+.navbar {
+    font-size: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li input {
+    display: block;
+    margin: 8px;
+    font-size: 24px;
+    padding: 2px 2px;
+    width: calc(100% - 20px);
+    vertical-align: middle;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+    background-color: #111;
+    color: #fab7b9;
+    transition-duration: 0.4s;
+}
+.navbar .navbar__li-pay a {
+    color: #ffe396;
+    margin-top: 0px;
+}
+
+.navbar .navbar__li-pay a:hover {
+    color: #fab700;
+    transition-duration: 0.4s;
+}
+
+.navbar__li-buttons {
+}
+
+.navbar__li-search {
+    order: 4;
+    width: 100%;
+}
+
+.navbar__li-pay {
+    margin-left: auto;
+    min-width: 80px;
+}
+
+.navbar__li-pay img {
+    max-height: 24px;
+    vertical-align: top;
+}
+
+.column {
+    display: inline-block;
+}
+
+
+/* > large mobile */
+@media (min-width: 451px) {
+    .header-upper {
+        display: block;
+    }
+
+    .header-upper__logo-face {
+        width: 135px;
+        vertical-align: middle;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header-upper__logo-face:hover {
+        cursor: pointer;
+    }
+}
+
+/* > 2 tiles */
+@media (min-width: 673px) {
+    .navbar__li-pay {
+        margin-left: inherit;
+    }
+
+    .navbar__li-search {
+        margin-left: auto;
+        width: 360px;
+        order: inherit;
+    }
+    
+    .navbar .weapons-search__input {
+        width: calc(100% - 20px);
+    }
+}
+
+/* > tablet */
+@media (min-width: 769px) {
+    .header-upper__logo-face {
+        display: inline;
+    }
+}
