@@ -1,4 +1,3 @@
-import AdPropogator from '../../../public/js/AdPropogator.js';
 import pageHtml from "../templates/weapons.html.js";
 
 import resultHtml from "../templates/weapons/_result.html.js";
@@ -17,7 +16,6 @@ export default class WeaponsView extends BaseView {
         switch(event) {
             case "weaponsChanged":
                 this._renderWeapons(...args);
-                AdPropogator();
                 break;
             case "weaponChanged":
                 this._renderWeapon(...args);
