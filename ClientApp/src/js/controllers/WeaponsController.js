@@ -44,7 +44,10 @@ export default class WeaponsController extends BaseController {
     }
 
     enchant(weaponId, state) {
-        debugger;
+        const weapon = this.weapons.find(weaponId);
+        if (weapon) {
+            weapon.enchanted = state;
+        }
     }
 
     async _fetchWeaponsAsync(params) {
@@ -61,7 +64,7 @@ export default class WeaponsController extends BaseController {
             query.push(`like_name=${params.q}`);
         }
         if (params.page) {
-            query.push(`page=${params.page}`);
+            query.push(`page[number]=${params.page}`);
         }
         return query.join("&");
     }
