@@ -31,10 +31,9 @@ namespace WackyWandasWickedWeaponsDotNet.Controllers
                 }
                 var queryString = String.Join("&", queryParams.ToArray());
 
-                HttpResponseMessage Res = await client.GetAsync($"/weapons?{queryString}");
-  
-                var response = Res.Content.ReadAsStringAsync().Result;  
-                return response;  
+                var response = await client.GetAsync($"/weapons?{queryString}");
+                var body = await response.Content.ReadAsStringAsync();
+                return body;
             }  
             
         }
